@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👽 SOFT QUIZ ABOUT AI 👽</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="title" class="fade">👽 SOFT QUIZ ABOUT AI 👽</div>
+        <div id="input-container">
+            <p id="input-label">참가명을 입력해주세요.</p>
+            <input type="text" id="username" placeholder="참가명">
+            <button id="start-btn">시작하기</button>
+        </div>
+        <div id="question-container">
+            <div id="question"></div>
+            <div id="answers">
+                <button class="answer-btn" data-answer="yes">Yes</button>
+                <button class="answer-btn" data-answer="no">No</button>
+            </div>
+            <div id="explanation"></div>
+        </div>
+        <div id="result-container">
+            <p id="score"></p>
+            <button id="restart-btn">다시하기</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#quiz-container {
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  border: 5px solid transparent;
+  border-radius: 15px;
+  padding: 20px;
+  background: black;
+  animation: glowing-border 2s infinite;
+}
+
+@keyframes glowing-border {
+  0% { border-color: #00FF00; }
+  50% { border-color: #00FFFF; }
+  100% { border-color: #00FF00; }
+}
+
+.fade {
+  font-size: 2em;
+  font-weight: bold;
+  opacity: 0;
+  animation: fade-in-out 4s infinite;
+}
+
+@keyframes fade-in-out {
+  0%, 100% { opacity: 0; }
+  25%, 75% { opacity: 1; }
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#question-container, #result-container {
+  display: none;
+}
+
+.answer-btn {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#explanation, #score {
+  margin-top: 20px;
+}
+
+@keyframes spaceship-fly {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(100vw, -50vh); }
+}
+
+.spaceship {
+  position: fixed;
+  font-size: 2em;
+  animation: spaceship-fly 10s infinite linear;
+}
